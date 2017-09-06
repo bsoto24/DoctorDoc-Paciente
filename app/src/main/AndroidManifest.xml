@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.doctordoc.doctordoc_paciente">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googlemaps_key" />
+
+        <activity
+            android:name=".presentation.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyThemeNoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.CitasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.HistorialCitasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.PreguntasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.ConfiguracionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activity.FamiliaresActivity"
+            android:label="@string/title_activity_familiares"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".presentation.activity.ResultadoActivity"></activity>
+    </application>
+
+</manifest>
