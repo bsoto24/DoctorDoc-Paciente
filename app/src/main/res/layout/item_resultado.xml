@@ -31,11 +31,13 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_clinica"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Clinica Ricardo Palma"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -49,14 +51,16 @@
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:padding="5dp"
-                    android:src="@drawable/ic_tratamiento" />
+                    android:src="@drawable/ic_especialidad" />
 
                 <TextView
+                    android:id="@+id/tv_especialidad"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="Medicina General"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -71,14 +75,16 @@
                     android:layout_width="30dp"
                     android:layout_height="match_parent"
                     android:padding="5dp"
-                    android:src="@drawable/ic_sintomas" />
+                    android:src="@drawable/ic_medico" />
 
                 <TextView
+                    android:id="@+id/tv_doctor"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:gravity="center_vertical"
                     android:text="Dr. Dikson Espinoza"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>
@@ -99,24 +105,29 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent"
                         android:padding="5dp"
-                        android:src="@drawable/ic_sintomas" />
+                        android:src="@drawable/ic_time" />
 
                     <TextView
+                        android:id="@+id/tv_fecha"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:gravity="center_vertical"
                         android:text="Sábado 16"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/tv_hora"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="6:00 PM"
+
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
 
             </LinearLayout>

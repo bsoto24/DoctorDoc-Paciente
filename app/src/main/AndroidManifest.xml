@@ -19,9 +19,8 @@
             android:value="@string/googlemaps_key" />
 
         <activity
-            android:name=".presentation.activity.SplashActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/MyThemeNoBar">
+            android:name=".presentation.activity.LocalActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,7 +52,7 @@
             android:name=".presentation.activity.FamiliaresActivity"
             android:label="@string/title_activity_familiares"
             android:theme="@style/AppTheme" />
-        <activity android:name=".presentation.activity.ResultadoActivity"></activity>
+        <activity android:name=".presentation.activity.ResultadoActivity" />
     </application>
 
 </manifest>

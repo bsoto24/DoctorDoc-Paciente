@@ -50,21 +50,7 @@ public class StoreRenderer extends DefaultClusterRenderer<Locale> {
 
     @Override
     protected void onBeforeClusterItemRendered(Locale locale, MarkerOptions markerOptions) {
-
-        if(locale.getLocalId().equals("2")){
-            mImageView.setImageResource(R.drawable.laluz);
-
-        }
-
-        if(locale.getLocalId().equals("1")){
-            mImageView.setImageResource(R.drawable.ricpal);
-        }
-
-        if(locale.getLocalId().equals("3")){
-            mImageView.setImageResource(R.drawable.perjap);
-
-        }
-
+        mImageView.setImageResource(locale.getImgLogo());
         Bitmap icon = mIconGenerator.makeIcon();
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon));
     }

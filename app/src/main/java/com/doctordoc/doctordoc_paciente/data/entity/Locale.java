@@ -14,15 +14,19 @@ public class Locale implements ClusterItem, Serializable {
     private String localDireccion;
     private String localLatitud;
     private String localLongitud;
+    private String localHorario;
     private int imgLogo;
+    private int imgFoto;
 
-    public Locale(String localId, String localNombre, String localDireccion, String localLatitud, String localLongitud, int imgLogo) {
+    public Locale(String localId, String localNombre, String localDireccion, String localLatitud, String localLongitud, String localHorario, int imgLogo, int imgFoto) {
         this.localId = localId;
         this.localNombre = localNombre;
         this.localDireccion = localDireccion;
         this.localLatitud = localLatitud;
         this.localLongitud = localLongitud;
+        this.localHorario = localHorario;
         this.imgLogo = imgLogo;
+        this.imgFoto = imgFoto;
     }
 
     public String getLocalId() {
@@ -76,5 +80,21 @@ public class Locale implements ClusterItem, Serializable {
 
     public void setImgLogo(int imgLogo) {
         this.imgLogo = imgLogo;
+    }
+
+    public String getLocalHorario() {
+        return localHorario;
+    }
+
+    public void setLocalHorario(String localHorario) {
+        this.localHorario = localHorario;
+    }
+
+    public int getImgFoto() {
+        return imgFoto;
+    }
+
+    public void setImgFoto(int imgFoto) {
+        this.imgFoto = imgFoto;
     }
 }

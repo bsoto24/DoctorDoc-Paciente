@@ -10,7 +10,7 @@
             <item
                 android:id="@+id/nav_historial_citas"
                 android:icon="@drawable/ic_historial"
-                android:title="Historial de citas" />
+                android:title="Historial de locales" />
             <item
                 android:id="@+id/nav_familiares"
                 android:icon="@drawable/ic_familiares"
