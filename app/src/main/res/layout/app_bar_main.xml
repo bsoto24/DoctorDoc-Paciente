@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <TextView
                     android:layout_marginTop="10dp"
@@ -60,6 +60,9 @@
                         android:id="@+id/tf_busqueda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
                         android:hint="Especialidad"
                         android:text="Psicología"/>
                 </android.support.design.widget.TextInputLayout>
@@ -78,7 +81,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Fecha"
-                            android:text="29/08/17"/>
+                            android:imeOptions="actionNext"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:text="Martes 24"/>
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
@@ -90,6 +96,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Hora"
+                            android:imeOptions="actionNext"
+                            android:inputType="datetime"
+                            android:maxLines="1"
                             android:text="6:00 PM" />
                     </android.support.design.widget.TextInputLayout>
 
@@ -111,7 +120,7 @@
                     android:layout_marginRight="30dp"
                     android:backgroundTint="@color/colorAccent"
                     android:gravity="center"
-                    android:text="Busqueda rápida"
+                    android:text="Reserva una cita"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />

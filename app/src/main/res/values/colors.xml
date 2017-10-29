@@ -16,4 +16,7 @@
     <color name="currentDate">#56bcea</color>
     <color name="selectedDate">#c9e1ec</color>
     <color name="eventDay">#FF5252</color>
+
+    <color name="facebook">#3A589E</color>
+    <color name="google">#F32C25</color>
 </resources>

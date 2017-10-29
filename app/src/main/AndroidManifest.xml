@@ -19,7 +19,7 @@
             android:value="@string/googlemaps_key" />
 
         <activity
-            android:name=".presentation.activity.LocalActivity"
+            android:name=".presentation.activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(View view) {
                 if(buscar%2!=0){
                     lyBuscar.setVisibility(View.VISIBLE);
-                    btnBuscar.setText("Buscar");
+                    btnBuscar.setText("Buscar clínicas");
                 }else{
                     lyBuscar.setVisibility(View.GONE);
-                    btnBuscar.setText("Busqueda Rápida");
+                    btnBuscar.setText("Reserva una cita");
                 }
                 buscar++;
             }

@@ -20,6 +20,12 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="RaisedButtonWhite" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+
     <style name="EditTextGray" parent="TextAppearance.AppCompat">
         <item name="android:textColorHint">@color/primaryText</item>
         <item name="android:textSize">@dimen/text_input_size</item>
